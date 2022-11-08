@@ -4,10 +4,11 @@ bufferline.setup({
   options = {
     mode = "tabs",
     separator_style = 'slant',
-    always_show_bufferline = false,
-    show_buffer_close_icons = false,
-    show_close_icon = false,
-    color_icons = true
+    always_show_bufferline = true,
+    show_buffer_close_icons = true,
+    show_close_icon = true,
+    color_icons = true,
+    offsets= {{filetype="NvimTree", text="", padding = 1}}
   },
   highlights = {
     separator = {
@@ -24,7 +25,6 @@ bufferline.setup({
     buffer_selected = {
       fg = '#fdf6e3',
       underline = true,
-      undercurl = true,
       italic = true    },
     fill = {
       bg = '#073642'
