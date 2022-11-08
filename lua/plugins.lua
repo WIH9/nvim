@@ -24,4 +24,6 @@ return require('packer').startup(function(use)
   }
 
   use 'nvim-lualine/lualine.nvim'
+
+  use 'nvim-treesitter/nvim-treesitter'
 end)
