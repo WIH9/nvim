@@ -29,4 +29,13 @@ return require('packer').startup(function(use)
 
   use 'windwp/nvim-ts-autotag'
   use 'windwp/nvim-autopairs'
+
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.x',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+  use 'nvim-telescope/telescope-file-browser.nvim'
+
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+
 end)
