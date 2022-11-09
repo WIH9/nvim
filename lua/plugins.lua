@@ -50,4 +50,12 @@ return require('packer').startup(function(use)
     "glepnir/lspsaga.nvim",
     branch = "main"
   })
+
+  use 'jose-elias-alvarez/null-ls.nvim'
+
+  use 'MunifTanjim/prettier.nvim'
+
+  use 'lewis6991/gitsigns.nvim'
+
+  use 'dinhhuy258/git.nvim'
 end)
